@@ -1,0 +1,42 @@
+#Install required software
+sudo apt install git libswscale-dev gtk+-2.0 libavutil-dev v4l2loopback-utils v4l2loopback-dkms cmake nasm yasm pkg-config libgtk2.0-dev 
+
+#Test dummy video devices
+v4l2-ctl --list-devices
+
+#Build required dependencies
+cd ~/Downloads
+git clone https://github.com/libjpeg-turbo/libjpeg-turbo.git
+cd libjpeg-turbo
+mkdir build && cd build
+cmake -G"Unix Makefiles" ../
+make && sudo make install
+
+#Build droidcam from sources
+cd ~/Downloads
+git clone https://github.com/aramg/droidcam.git
+cd droidcam/linux
+make
+sudo ./install-dkms
+
+#Create a launcher
+cat > ~/.local/share/applications/droidcam.desktop << ENDOFFILE
+##Droidcam Launcher
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Name=DroidCam
+Exec=droidcam
+Comment=Use your Android phone as a wireless webcam or an IP Cam!
+Icon=droidcam
+Categories=GNOME;GTK;Video;
+Name[it]=droidcam
+ENDOFFILE
+###
+
+#Connect over ADB (USB)
+sudo apt install adb
+
+#Uninstall
+sudo /opt/droidcam-uninstall
