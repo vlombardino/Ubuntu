@@ -1,0 +1,184 @@
+#####Ubuntu 18.04#####
+
+#####Default Software#####
+sudo apt install openssh-server
+sudo apt install vim
+sudo apt install gdebi
+
+#####Additional Software#####
+
+##Additional Linux Software#####
+sudo apt install gnome-tweaks
+sudo apt install synaptic apt-xapian-index
+sudo apt install gnome-system-monitor
+sudo apt install libgtop2-dev
+
+sudo apt install chromium-browser handbrake vlc audacity gimp libreoffice youtube-dl neofetch gthumb
+
+##Google Chrome#####
+cd Downloads
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+##Restricted Extras#####
+sudo apt install ubuntu-restricted-extras
+#DVD support
+sudo apt –no-install-recommends install libdvd-pkg
+sudo dpkg-reconfigure libdvd-pkd
+
+##https://teejeetech.in/#####
+sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
+sudo apt update
+sudo apt install aptik aptik-gtk
+#Kernel update utility
+sudo apt install ukuu
+sudo apt install haveged
+
+##exFAT Drive#####
+sudo apt install exfat-fuse exfat-utils
+
+##Gnome Extensions Connector#####
+sudo apt install chrome-gnome-shell
+
+##Install flatpak#####
+sudo apt install flatpak
+sudo apt install gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+##VNC Share Desktop#####
+sudo apt install vino
+Open settings panel: Setting -> Sharing -> Screen Sharing
+#Start vino-server at login
+/usr/lib/vino/vino-server
+
+##Remmina#####
+sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
+sudo apt update
+sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret remmina-plugin-spice
+sudo killall remmina
+
+##Mate - New Welcome Screen
+snap install ubuntu-mate-welcome --classic
+snap install software-boutique --classic
+snap install pulsemixer
+
+##Managing Logitech’s Unifying Receiver
+sudo apt install solaar-gnome3
+
+##grub customizer#####
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt update
+sudo apt install grub-customizer
+
+##Stacer - Linux System Optimizer and Monitoring#####
+sudo add-apt-repository ppa:oguzhaninan/stacer
+sudo apt update
+sudo apt install stacer
+
+##MakeMKV#####
+sudo add-apt-repository ppa:heyarje/makemkv-beta
+sudo apt update
+sudo apt install makemkv-bin makemkv-oss
+
+##Mirror & Control Your Android Phone#####
+sudo snap install scrcpy
+vim ~/.local/share/applications/android-mirror.desktop
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Android Mirror
+Comment=Mirror & Control Your Android
+Icon=phone
+Exec=scrcpy
+Categories=GNOME;Application
+X-Ubuntu-Gettext-Domain=scrcpy
+Name[en_US]=Android Mirror
+
+#####Desktop Theming#####
+
+##New theme - Communitheme
+sudo snap install communitheme
+-Log out select communitheme
+
+##Minimize on click
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+
+##Auto maximize apps#####
+gsettings set org.gnome.mutter auto-maximize false
+
+##Show Apps at Top#####
+gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
+
+##Disable password request after suspend
+gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend false
+
+##Disable lock screen
+gsettings set org.gnome.desktop.lockdown disable-lock-screen true
+
+##Customise Dash-To-Dock
+sudo apt install dconf-editor
+-org ▹ gnome ▹ shell ▹ extensions ▹ dash-to-dock
+-show-apps-at-top
+-unity-backlit-items
+
+##Kdenlive Dark Theme
+sudo apt install kde-style-breeze-qt4
+sudo apt install breeze-gtk-theme
+
+##Dash to Dock 
+https://extensions.gnome.org/extension/307/dash-to-dock/
+
+##Show the Suspend Button on shutdown menu 
+https://extensions.gnome.org/extension/826/suspend-button/
+
+##Disable screen shield when screen lock is disabled
+https://extensions.gnome.org/extension/672/disable-screen-shield/
+
+##Volume control extension
+https://extensions.gnome.org/extension/937/laine/
+
+##GSConnect 
+https://extensions.gnome.org/extension/1319/gsconnect/
+- Install KDE Connect Android app from Google Play
+
+######Misc#####
+
+#####Gnome Cedilla Fix
+##https://github.com/marcopaganini/gnome-cedilla-fix
+wget -q https://raw.githubusercontent.com/marcopaganini/gnome-cedilla-fix/master/fix-cedilla -O fix-cedilla
+chmod 755 fix-cedilla
+./fix-cedilla
+##Settings ▹ Region & Language ▹ Input Sources: English(US, intl., with dead keys)
+
+##Fix Bluetooth
+dpkg --status bluez | grep '^Version:'
+sudo add-apt-repository ppa:bluetooth/bluez
+sudo apt update && sudo apt upgrade
+
+##New Document - Right Click
+touch ~/Templates/Empty\ Document
+
+##Change LibreOffice style to Ribon bar
+-Tools ▹ Options
+-Advanced ▹ Enable experimental features
+-Restart LibreOffice
+-View ▹ Toolbar Layout
+
+#####Latest Nvidia drivers
+##Show video card details
+sudo lshw -c display
+or
+sudo lshw -c video
+##Install
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
+sudo ubuntu-drivers devices
+sudo ubuntu-drivers autoinstall
+or
+sudo apt install nvidia-driver-390
+##Remove Drivers
+sudo apt purge nvidia-*
+sudo apt autoremove
+##Remove PPA
+sudo add-apt-repository --remove ppa:graphics-drivers/ppa
