@@ -33,7 +33,7 @@ docker run -d \
 	-p 9000:9000 \
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	-v /home/box/docker/portainer/config:/data portainer/portainer \
-	--restart=always  
+	--restart=always \
 	portainer/portainer
 
 #jackett
