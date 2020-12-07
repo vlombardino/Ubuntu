@@ -147,6 +147,11 @@ chmod 755 fix-cedilla
 ./fix-cedilla
 ##Settings ▹ Region & Language ▹ Input Sources: English(US, intl., with dead keys)
 
+##Workspace Dual Monitors
+gsettings set org.gnome.mutter workspaces-only-on-primary false
+#Workspace Indicator
+https://extensions.gnome.org/extension/21/workspace-indicator/
+
 ##Fix Bluetooth
 dpkg --status bluez | grep '^Version:'
 sudo add-apt-repository ppa:bluetooth/bluez
