@@ -131,6 +131,13 @@ https://extensions.gnome.org/extension/826/suspend-button/
 ##Disable screen shield when screen lock is disabled
 https://extensions.gnome.org/extension/672/disable-screen-shield/
 
+##Workspace Dual Monitors
+gsettings set org.gnome.mutter workspaces-only-on-primary false
+#Workspace Indicator
+https://extensions.gnome.org/extension/21/workspace-indicator/
+#Auto Move Windows
+https://extensions.gnome.org/extension/16/auto-move-windows/
+
 ##Volume control extension
 https://extensions.gnome.org/extension/937/laine/
 
@@ -146,11 +153,6 @@ wget -q https://raw.githubusercontent.com/marcopaganini/gnome-cedilla-fix/master
 chmod 755 fix-cedilla
 ./fix-cedilla
 ##Settings ▹ Region & Language ▹ Input Sources: English(US, intl., with dead keys)
-
-##Workspace Dual Monitors
-gsettings set org.gnome.mutter workspaces-only-on-primary false
-#Workspace Indicator
-https://extensions.gnome.org/extension/21/workspace-indicator/
 
 ##Fix Bluetooth
 dpkg --status bluez | grep '^Version:'
