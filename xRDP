@@ -32,7 +32,7 @@ gnome-tweak-tool -> Extensions -> [Desktop icons] [Ubuntu appindicators] [Ubuntu
 gnome-tweak-tool -> Window Titlebars -> [Maximize] [Minimize] (on)
 
 #Fix dock bar not extending
-dconf-editor -> org/gnome/shell/extensions/dash-to-dock/extend-height (on)
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height 'true'
 
 #Install script
 https://www.c-nergy.be/products.html
