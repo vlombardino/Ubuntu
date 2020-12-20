@@ -1,0 +1,37 @@
+#Installing xRDP
+sudo apt install xrdp
+sudo systemctl status xrdp
+sudo adduser xrdp ssl-cert
+sudo systemctl restart xrdp
+sudo ufw allow 3389
+
+#Fix error "Authentication required to create managed color device."
+sudo vim /etc/polkit-1/localauthority/50-local.d/45-allow-colord.pkla
+-->
+[Allow Colord all Users]
+Identity=unix-user:*
+Action=org.freedesktop.color-manager.create-device;org.freedesktop.color-manager.create-profile;org.freedesktop.color-manager.delete-device;org.freedesktop.color-manager.delete-profile;org.freedesktop.color-manager.modify-device;org.freedesktop.color-manager.modify-profile
+ResultAny=no
+ResultInactive=no
+ResultActive=yes
+<--
+
+#Fix error "Authentication required to refresh system repositories."
+sudo vim /etc/polkit-1/localauthority/50-local.d/46-allow-update-repo.pkla
+-->
+[Allow Package Management all Users]
+Identity=unix-user:*
+Action=org.freedesktop.packagekit.system-sources-refresh
+ResultAny=yes
+ResultInactive=yes
+ResultActive=yes
+<--
+
+#Fix Ubuntu appearance/dock/
+sudo apt install gnome-tweak-tool dconf-editor
+gnome-tweak-tool -> Appearance -> Themes
+gnome-tweak-tool -> Extensions -> Desktop icons/Ubuntu appindicators/Ubuntu dock (on)
+gnome-tweak-tool -> Window Titlebars -> Maximize/Minimize (on)
+
+#Fix dock bar not extending
+dconf-editor -> org/gnome/shell/extensions/dash-to-dock/extend-height (on)
