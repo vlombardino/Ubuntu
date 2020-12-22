@@ -104,6 +104,9 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ##Auto maximize apps#####
 gsettings set org.gnome.mutter auto-maximize false
 
+##Add trash icon to dock#####
+gsettings set org.gnome.shell.extensions.dash-to-dock show-trash true
+
 ##Show Apps at Top#####
 gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
 
