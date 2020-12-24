@@ -78,8 +78,8 @@ sudo apt install makemkv-bin makemkv-oss
 
 ##Mirror & Control Your Android Phone#####
 sudo snap install scrcpy
-vim ~/.local/share/applications/android-mirror.desktop
-#-->
+
+cat << EOF >>  ~/.local/share/applications/android-mirror.desktop
 [Desktop Entry]
 Version=1.0
 Type=Application
@@ -90,7 +90,9 @@ Exec=scrcpy
 Categories=GNOME;Application
 X-Ubuntu-Gettext-Domain=scrcpy
 Name[en_US]=Android Mirror
-#<--
+EOF
+
+sudo xdg-desktop-menu forceupdate --mode system
 
 #####Desktop Theming#####
 
