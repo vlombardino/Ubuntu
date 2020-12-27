@@ -37,6 +37,11 @@ sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+##AppImageLauncher Launcher#####
+sudo add-apt-repository ppa:appimagelauncher-team/stable
+sudo apt update
+sudo apt install appimagelauncher
+
 ##VNC Share Desktop#####
 sudo apt install vino
 Open settings panel: Setting -> Sharing -> Screen Sharing
@@ -48,11 +53,6 @@ sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
 sudo apt update
 sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret remmina-plugin-spice
 sudo killall remmina
-
-##AppImageLauncher Launcher#####
-sudo add-apt-repository ppa:appimagelauncher-team/stable
-sudo apt update
-sudo apt install appimagelauncher
 
 ##https://teejeetech.in/#####
 sudo apt-add-repository -y ppa:teejee2008/ppa
