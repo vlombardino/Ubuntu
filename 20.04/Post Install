@@ -27,6 +27,11 @@ sudo apt install exfat-fuse exfat-utils
 ##Gnome Extensions Connector#####
 sudo apt install chrome-gnome-shell
 
+##Menu Editors#####
+sudo apt instll alacarte
+#or
+sudo apt install menulibre
+
 ##Install flatpak#####
 sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
