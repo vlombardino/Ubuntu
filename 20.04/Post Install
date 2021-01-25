@@ -81,6 +81,16 @@ sudo add-apt-repository ppa:oguzhaninan/stacer
 sudo apt update
 sudo apt install stacer
 
+##youtube-dlg#####
+sudo apt install update
+wget http://ubuntu.mirrors.tds.net/ubuntu/pool/universe/t/twodict/python-twodict_1.2-1_all.deb
+sudo apt install ./python-twodict_1.2-1_all.deb
+wget http://ppa.launchpad.net/nilarimogard/webupd8/ubuntu/pool/main/y/youtube-dlg/youtube-dlg_0.4-1~webupd8~disco0_all.deb
+sudo apt install ./youtube-dlg_0.4-1~webupd8~disco0_all.deb
+sudo apt install youtube-dl
+sudo apt install ffmpeg
+rm python-twodict_1.2-1_all.deb youtube-dlg_0.4-1~webupd8~disco0_all.deb
+
 ##MakeMKV#####
 sudo add-apt-repository ppa:heyarje/makemkv-beta
 sudo apt update
