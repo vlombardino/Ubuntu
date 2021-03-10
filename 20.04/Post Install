@@ -7,8 +7,7 @@ sudo apt install openssh-server vim gdebi
 
 ##Additional Linux Software#####
 sudo apt install gnome-tweaks synaptic apt-xapian-index gnome-system-monitor libgtop2-dev
-sudo apt install chromium-browser handbrake vlc audacity gimp libreoffice neofetch gthumb
-sudo apt install neofetch flameshot
+sudo apt install chromium-browser handbrake vlc audacity gimp libreoffice neofetch gthumb flameshot
 
 ##Google Chrome#####
 cd Downloads
