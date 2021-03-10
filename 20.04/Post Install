@@ -7,7 +7,7 @@ sudo apt install openssh-server vim gdebi
 
 ##Additional Linux Software#####
 sudo apt install gnome-tweaks synaptic apt-xapian-index gnome-system-monitor libgtop2-dev
-sudo apt install chromium-browser handbrake vlc audacity gimp libreoffice youtube-dl neofetch gthumb
+sudo apt install chromium-browser handbrake vlc audacity gimp libreoffice neofetch gthumb
 sudo apt install neofetch flameshot
 
 ##Google Chrome#####
@@ -20,6 +20,12 @@ sudo apt install ubuntu-restricted-extras
 #DVD support
 sudo apt –no-install-recommends install libdvd-pkg
 sudo dpkg-reconfigure libdvd-pkd
+
+##GitHub Desktop#####
+wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/packagecloud-shiftky-desktop.list'
+sudo apt-get update
+sudo apt install github-desktop
 
 ##exFAT Drive#####
 sudo apt install exfat-fuse exfat-utils
@@ -51,7 +57,6 @@ Open settings panel: Setting -> Sharing -> Screen Sharing
 ##Remote Desktop#####
 sudo apt install vino
 gsettings set org.gnome.Vino require-encryption false
-
 
 ##Remmina#####
 sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
