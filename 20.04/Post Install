@@ -53,10 +53,6 @@ Open settings panel: Setting -> Sharing -> Screen Sharing
 #Start vino-server at login
 /usr/lib/vino/vino-server
 
-##Remote Desktop#####
-sudo apt install vino
-gsettings set org.gnome.Vino require-encryption false
-
 ##Remmina#####
 sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
 sudo apt update
