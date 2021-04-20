@@ -3,6 +3,9 @@
 #####Default Software#####
 sudo apt install openssh-server vim gdebi
 
+##New Document - Right Click
+touch ~/Templates/Empty\ Document
+
 #####Additional Software#####
 
 ##Additional Linux Software#####
@@ -196,9 +199,6 @@ chmod 755 fix-cedilla
 dpkg --status bluez | grep '^Version:'
 sudo add-apt-repository ppa:bluetooth/bluez
 sudo apt update && sudo apt upgrade
-
-##New Document - Right Click
-touch ~/Templates/Empty\ Document
 
 ##Change LibreOffice style to Ribon bar
 -Tools ▹ Options
