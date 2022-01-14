@@ -102,6 +102,7 @@ docker create \
 ```
 
 [Bazarr](https://hub.docker.com/r/linuxserver/bazarr)
+```
 docker create \
 	--name=bazarr \
 	-e PUID=1000 \
@@ -115,6 +116,7 @@ docker create \
 	-v /home/box/Media/TV:/tv \
 	--restart unless-stopped \
 	linuxserver/bazarr
+```
 
 [Sonarr](https://hub.docker.com/r/linuxserver/sonarr)
 ```
