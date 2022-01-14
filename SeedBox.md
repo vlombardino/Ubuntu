@@ -1,44 +1,48 @@
-#Ubuntu Server 20.04
+# Ubuntu Server 20.04
 
-#initial setup
+Initial setup
+```
 sudo apt install openssh-server vim htop qemu-guest-agent
 sudo apt install cockpit (cockpit-*)
 wget https://launchpad.net/ubuntu/+source/cockpit/215-1~ubuntu19.10.1/+build/18889196/+files/cockpit-docker_215-1~ubuntu19.10.1_all.deb
 sudo dpkg -i cockpit-docker_215-1~ubuntu19.10.1_all.deb
+```
 
-#nfs setup
-#Synology NFS setup (Read/Write, Map all users to admin,sys, Enable asynchronous, Allow usersto access mounted subfolders)
+NFS setup
+> Synology NFS setup (Read/Write, Map all users to admin,sys, Enable asynchronous, Allow usersto access mounted subfolders)
+```
 sudo apt install nfs-common
 mkdir -p /home/box/Media
 sudo vim /etc/fstab
 192.168.1.10:/volume1/Media /home/box/Media nfs rw,user 0 0
 sudo mount -a
+```
 
-#install and configure docker(snap)
+Install and configure docker(snap)
+```
 sudo snap install docker
 sudo addgroup --system docker
 sudo adduser $USER docker
 newgrp docker
 sudo snap disable docker
 sudo snap enable docker
+```
 
-#create folders
+Create folders
+```
 mkdir -p /home/box/docker/{portainer,jackett,nzbget,delugevpn,bazarr,sonarr,radarr,handbrake,filebrowser}/config
 mkdir -p /home/box/downloads/{completed/{movies,music,other,tv},incomplete,intermediate,nzb,queue,tmp,watch,handbrake/{converted,storage,watch}}
 
-docker volume create portainer_data
-docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
-or
-docker run -d \
-	--name=portainer \
-	-p 8000:8000 \
-	-p 9000:9000 \
-	-v /var/run/docker.sock:/var/run/docker.sock \
-	-v /home/box/docker/portainer/config:/data portainer/portainer \
-	--restart=always \
-	portainer/portainer
+```
 
-#jackett
+[Portainer 2](https://hub.docker.com/r/portainer/portainer-ce)
+```
+docker volume create portainer_data
+docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+```
+
+[Jackett](https://hub.docker.com/r/linuxserver/jackett)
+```
 docker create \
 	--name=jackett \
 	-e PUID=1000 \
@@ -50,8 +54,10 @@ docker create \
 	-v /home/box/downloads/tmp:/downloads \
 	--restart unless-stopped \
 	linuxserver/jackett
+```
 
-#nzbget
+[Nzbget](https://hub.docker.com/r/linuxserver/nzbget)
+```
 docker create \
 	--name=nzbget \
 	-e PUID=1000 \
@@ -62,8 +68,10 @@ docker create \
 	-v /home/box/downloads:/downloads \
 	--restart unless-stopped \
 	linuxserver/nzbget
+```
 
-#delugevpn
+[Deluge VPN](https://github.com/binhex/arch-delugevpn)
+```
 docker create \
 	--cap-add=NET_ADMIN \
 	-p 8112:8112 \
@@ -75,8 +83,8 @@ docker create \
 	-v /home/box/docker/delugevpn/config:/config \
 	-v /etc/localtime:/etc/localtime:ro \
 	-e VPN_ENABLED=yes \
-	-e VPN_USER=vlombardino@gmail.com \
-	-e VPN_PASS=VPNNord@20190513 \
+	-e VPN_USER=USERNAME \
+	-e VPN_PASS=PASSWORD \
 	-e VPN_PROV=custom \
 	-e STRICT_PORT_FORWARD=yes \
 	-e ENABLE_PRIVOXY=yes \
@@ -91,8 +99,9 @@ docker create \
 	-e PGID=1000 \
 	--restart unless-stopped \
 	binhex/arch-delugevpn
+```
 
-#bazarr
+[Bazarr](https://hub.docker.com/r/linuxserver/bazarr)
 docker create \
 	--name=bazarr \
 	-e PUID=1000 \
@@ -107,7 +116,8 @@ docker create \
 	--restart unless-stopped \
 	linuxserver/bazarr
 
-#sonarr
+[Sonarr](https://hub.docker.com/r/linuxserver/sonarr)
+```
 docker create \
 	--name=sonarr \
 	-e PUID=1000 \
@@ -120,8 +130,10 @@ docker create \
 	-v /home/box/downloads:/downloads \
 	--restart unless-stopped \
 	linuxserver/sonarr
+```
 
-#radarr
+[Radarr](https://hub.docker.com/r/linuxserver/radarr)
+```
 docker create \
 	--name=radarr \
 	-e PUID=1000 \
@@ -135,9 +147,11 @@ docker create \
 	-v /home/box/downloads:/downloads \
 	--restart unless-stopped \
 	linuxserver/radarr
+```
 
-#handbrake
-#zocker-160/handbrake-nvenc-docker(nvidia)
+[Handbrake](https://hub.docker.com/r/jlesage/handbrake/)
+zocker-160/handbrake-nvenc-docker(nvidia)
+```
 docker create \
 	--name=handbrake \
 	-e UMASK=000 \
@@ -149,8 +163,10 @@ docker create \
 	-v /home/box/downloads/handbrake/converted:/output:rw \
 	--restart unless-stopped \
 	jlesage/handbrake
+```
 
-#filebrowser
+[Filebrowser](https://hub.docker.com/r/hurlenko/filebrowser)
+```
 docker create \
 	--name filebrowser \
 	--user $(id -u):$(id -g) \
@@ -160,3 +176,4 @@ docker create \
 	-e FB_BASEURL=/filebrowser \
 	--restart unless-stopped \
 	hurlenko/filebrowser
+```
