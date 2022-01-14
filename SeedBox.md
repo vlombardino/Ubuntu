@@ -9,7 +9,7 @@ sudo dpkg -i cockpit-docker_215-1~ubuntu19.10.1_all.deb
 ```
 
 NFS setup
-> Synology NFS setup (Read/Write, Map all users to admin,sys, Enable asynchronous, Allow usersto access mounted subfolders)
+> Synology NFS setup (Read/Write, Map all users to admin,sys, Enable asynchronous, Allow users to access mounted subfolders)
 ```
 sudo apt install nfs-common
 mkdir -p /home/box/Media
