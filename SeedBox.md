@@ -152,7 +152,7 @@ docker create \
 ```
 
 [Handbrake](https://hub.docker.com/r/jlesage/handbrake/)
-> zocker-160/handbrake-nvenc-docker(nvidia)
+> Fork with nvenc support: [zocker-160/handbrake-nvenc-docker(nvidia)](https://github.com/zocker-160/handbrake-nvenc-docker)
 ```
 docker create \
 	--name=handbrake \
