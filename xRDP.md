@@ -1,4 +1,4 @@
-## Installing xRDP
+### Installing xRDP
 ```
 sudo apt install xrdp
 sudo systemctl status xrdp
@@ -7,7 +7,7 @@ sudo systemctl restart xrdp
 sudo ufw allow 3389
 ```
 
-## Fix error "*Authentication required to create managed color device.*"
+### Fix error "*Authentication required to create managed color device.*"
 ```
 sudo bash -c "cat >/etc/polkit-1/localauthority/50-local.d/45-allow.colord.pkla" <<EOF
 [Allow Colord all Users]
@@ -19,7 +19,7 @@ ResultActive=yes
 EOF
 ```
 
-## Fix error "Authentication required to refresh system repositories."
+### Fix error "Authentication required to refresh system repositories."
 ```
 sudo bash -c "cat >/etc/polkit-1/localauthority/50-local.d/46-allow.update-repo.pkla" <<EOF
 [Allow Package Management all Users]
@@ -31,7 +31,7 @@ ResultActive=yes
 EOF
 ```
 
-## Fix Ubuntu *appearance/dock/*
+### Fix Ubuntu *appearance/dock/*
 ```
 sudo apt install gnome-tweak-tool dconf-editor
 ```
@@ -47,20 +47,20 @@ sudo apt install gnome-tweak-tool dconf-editor
 
 > gnome-tweak-tool -> Window Titlebars -> Minimize (on)
 
-## Fix dock bar not extending.
+### Fix dock bar not extending.
 ```
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height 'true'
 ```
 ---
 
-## Install script from [C-NERGY.BE](https://www.c-nergy.be/products.html).
+### Install script from [C-NERGY.BE](https://www.c-nergy.be/products.html).
 ```
 wget http://c-nergy.be/downloads/xrdp-installer-1.2.1.zip
 unzip xrdp-installer-1.2.1.zip
 chmod +x xrdp-installer-1.2.1.sh
 ```
 
-## Install with sound.
+### Install with sound.
 ```
 ./xrdp-installer-1.2.1.sh -s
 #If sound module doesn't load
