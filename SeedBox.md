@@ -1,6 +1,7 @@
 # Ubuntu Server 20.04
 
 Initial setup
+> Install Ubuntu with *box* as default user.
 ```
 sudo apt install openssh-server vim htop qemu-guest-agent
 sudo apt install cockpit (cockpit-*)
