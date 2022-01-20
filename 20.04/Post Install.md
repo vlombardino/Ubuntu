@@ -73,13 +73,19 @@ sudo apt install solaar-gnome3
 
 ### [Snap](https://snapcraft.io/)
 List of popular software
-```
-sudo snap install chromium color-picker makemkv mediainfo-gui scrcpy color-picker bashtop
-```
+
+[Color Picker](https://snapcraft.io/color-picker): ```sudo snap install color-picker```
+
+[scrcpy](https://snapcraft.io/scrcpy): ```sudo snap install scrcpy```
+
+[bashtop](https://snapcraft.io/bashtop): ```sudo snap install bashtop```
+
 ---
 
 ### [Flatpak](https://flathub.org/)
 List of popular software
+
+[Chromium Web Browser](https://flathub.org/apps/details/org.chromium.Chromium): ```flatpak install flathub org.chromium.Chromium```
 
 [Tor Browser Launcher](https://flathub.org/apps/details/com.github.micahflee.torbrowser-launcher): ```flatpak install flathub com.github.micahflee.torbrowser-launcher```
 
@@ -92,6 +98,10 @@ List of popular software
 [gThumb Image Viewer](https://flathub.org/apps/details/org.gnome.gThumb): ```flatpak install flathub org.gnome.gThumb```
 
 [Audacity](https://flathub.org/apps/details/org.audacityteam.Audacity): ```flatpak install flathub org.audacityteam.Audacity```
+
+[MakeMKV](https://flathub.org/apps/details/com.makemkv.MakeMKV): ```flatpak install flathub com.makemkv.MakeMKV```
+
+[MediaInfo](https://flathub.org/apps/details/net.mediaarea.MediaInfo): ```flatpak install flathub net.mediaarea.MediaInfo```
 
 [FileZilla](https://flathub.org/apps/details/org.filezillaproject.Filezilla): ```flatpak install flathub org.filezillaproject.Filezilla```
 
