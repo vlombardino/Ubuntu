@@ -78,6 +78,14 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
+LibreOffice
+```
+sudo add-apt-repository ppa:libreoffice
+sudo apt update
+sudo apt install libreoffice
+libreoffice --version
+```
+
 AppImage Launcher
 ```
 sudo add-apt-repository ppa:appimagelauncher-team/stable
