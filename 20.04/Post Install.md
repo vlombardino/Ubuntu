@@ -44,27 +44,6 @@ Open settings panel: Setting -> Sharing -> Screen Sharing
 /usr/lib/vino/vino-server
 ```
 
-Scrcpy
-> Mirror & Control Your Android Phone
-```
-sudo snap install scrcpy
-
-cat << EOF >>  ~/.local/share/applications/android-mirror.desktop
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Android Mirror
-Comment=Mirror & Control Your Android
-Icon=phone
-Exec=scrcpy
-Categories=GNOME;Application
-X-Ubuntu-Gettext-Domain=scrcpy
-Name[en_US]=Android Mirror
-EOF
-
-sudo xdg-desktop-menu forceupdate --mode system
-```
-
 exFAT Drive
 ```
 sudo apt install exfat-fuse exfat-utils
@@ -83,6 +62,8 @@ List of popular software
 [Color Picker](https://snapcraft.io/color-picker): ```sudo snap install color-picker```
 
 [scrcpy](https://snapcraft.io/scrcpy): ```sudo snap install scrcpy```
+> List connected devices ```adb devices```
+> Connect to specific device ```scrcpy -s 0B00990055"
 
 [bashtop](https://snapcraft.io/bashtop): ```sudo snap install bashtop```
 
