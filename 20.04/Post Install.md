@@ -110,8 +110,10 @@ List of popular software
 
 ### [AppImage](https://appimage.github.io/)
 
+Flatpack App\
 [AppImage](https://flathub.org/apps/details/io.github.prateekmedia.appimagepool): ```flatpak install flathub io.github.prateekmedia.appimagepool```
 
+Ubuntu Repository\
 [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) ```sudo apt install appimagelauncher```
 
 ---
