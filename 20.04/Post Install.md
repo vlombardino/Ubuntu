@@ -2,16 +2,16 @@
 
 ## Software
 
-Initial Software
+Initial Software (Desktop and/or Server)
 ```
-sudo apt install openssh-server vim gdebi
+sudo apt install openssh-server vim
 ```
 
 ## Repository Software
 
-Additional Software
+Additional Software (Desktop)
 ```
-sudo apt install gnome-tweaks synaptic apt-xapian-index gnome-system-monitor libgtop2-dev neofetch
+sudo apt install gnome-tweaks gdebi synaptic apt-xapian-index gnome-system-monitor libgtop2-dev neofetch
 ```
 
 Restricted Extras
