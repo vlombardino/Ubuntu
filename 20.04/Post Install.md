@@ -12,7 +12,7 @@ sudo apt install openssh-server vim gdebi
 Additional Software
 ```
 sudo apt install gnome-tweaks synaptic apt-xapian-index gnome-system-monitor libgtop2-dev
-sudo apt install chromium-browser handbrake vlc audacity gimp libreoffice neofetch gthumb flameshot
+sudo apt install neofetch flameshot
 ```
 
 Restricted Extras
@@ -70,6 +70,32 @@ sudo apt install solaar-gnome3
 ```
 
 ## Third Party Software
+
+### Snap
+List of popular software
+```
+sudo snap install shotcut chromium color-picker makemkv mediainfo-gui scrcpy color-picker bashtop
+```
+
+### Flatpak
+List of popular software
+
+[AppImage](https://flathub.org/apps/details/io.github.prateekmedia.appimagepool): ```flatpak install flathub io.github.prateekmedia.appimagepool```
+
+[Tor Browser Launcher](https://flathub.org/apps/details/com.github.micahflee.torbrowser-launcher): ```flatpak install flathub com.github.micahflee.torbrowser-launcher```
+
+[Bottles](https://flathub.org/apps/details/com.usebottles.bottles): ```flatpak install flathub com.usebottles.bottles```
+
+[Video Trimmer](https://flathub.org/apps/details/org.gnome.gitlab.YaLTeR.VideoTrimmer): ```flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer```
+
+[gThumb Image Viewer](https://flathub.org/apps/details/org.gnome.gThumb): ```flatpak install flathub org.gnome.gThumb```
+
+[Audacity](https://flathub.org/apps/details/org.audacityteam.Audacity): ```flatpak install flathub org.audacityteam.Audacity```
+
+[FileZilla](https://flathub.org/apps/details/org.filezillaproject.Filezilla): ```flatpak install flathub org.filezillaproject.Filezilla```
+
+
+### Repository
 
 Google Chrome
 ```
