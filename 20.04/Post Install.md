@@ -11,8 +11,7 @@ sudo apt install openssh-server vim gdebi
 
 Additional Software
 ```
-sudo apt install gnome-tweaks synaptic apt-xapian-index gnome-system-monitor libgtop2-dev
-sudo apt install neofetch flameshot
+sudo apt install gnome-tweaks synaptic apt-xapian-index gnome-system-monitor libgtop2-dev neofetch
 ```
 
 Restricted Extras
@@ -79,6 +78,8 @@ List of popular software
 [scrcpy](https://snapcraft.io/scrcpy): ```sudo snap install scrcpy```
 
 [bashtop](https://snapcraft.io/bashtop): ```sudo snap install bashtop```
+
+[Flameshot](https://snapcraft.io/flameshot): ```sudo snap install flameshot```
 
 ---
 
