@@ -109,6 +109,14 @@ sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret remmina-plugin
 sudo killall remmina
 ```
 
+YouTube-DL GUI
+```
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt update
+sudo apt install youtube-dlg
+```
+
+
 [TeejeeTech](https://teejeetech.in/)
 ```
 sudo apt-add-repository -y ppa:teejee2008/ppa
