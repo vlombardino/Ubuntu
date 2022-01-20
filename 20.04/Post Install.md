@@ -76,6 +76,7 @@ List of popular software
 ```
 sudo snap install chromium color-picker makemkv mediainfo-gui scrcpy color-picker bashtop
 ```
+---
 
 ### [Flatpak](https://flathub.org/)
 List of popular software
@@ -94,6 +95,7 @@ List of popular software
 
 [FileZilla](https://flathub.org/apps/details/org.filezillaproject.Filezilla): ```flatpak install flathub org.filezillaproject.Filezilla```
 
+---
 
 ### [AppImage](https://appimage.github.io/)
 
@@ -101,6 +103,7 @@ List of popular software
 
 [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) ```sudo apt install appimagelauncher```
 
+---
 
 ### Repository
 
