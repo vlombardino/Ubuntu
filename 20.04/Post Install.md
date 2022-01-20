@@ -22,11 +22,18 @@ sudo apt –no-install-recommends install libdvd-pkg
 sudo dpkg-reconfigure libdvd-pkd
 ```
 
-Install flatpak
+Install Flatpak
 ```
 sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+> Flatpak locations
+
+```
+/var/lib/flatpak/
+~/.local/share/applications/
+~/.var/app/
 ```
 
 VNC Share Desktop
