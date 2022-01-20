@@ -74,7 +74,7 @@ sudo apt install solaar-gnome3
 ### Snap
 List of popular software
 ```
-sudo snap install shotcut chromium color-picker makemkv mediainfo-gui scrcpy color-picker bashtop
+sudo snap install chromium color-picker makemkv mediainfo-gui scrcpy color-picker bashtop
 ```
 
 ### Flatpak
@@ -85,6 +85,8 @@ List of popular software
 [Tor Browser Launcher](https://flathub.org/apps/details/com.github.micahflee.torbrowser-launcher): ```flatpak install flathub com.github.micahflee.torbrowser-launcher```
 
 [Bottles](https://flathub.org/apps/details/com.usebottles.bottles): ```flatpak install flathub com.usebottles.bottles```
+
+[Shotcut](https://flathub.org/apps/details/org.shotcut.Shotcut): ```flatpak install flathub org.shotcut.Shotcut```
 
 [Video Trimmer](https://flathub.org/apps/details/org.gnome.gitlab.YaLTeR.VideoTrimmer): ```flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer```
 
