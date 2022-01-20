@@ -115,7 +115,7 @@ sudo add-apt-repository ppa:nilarimogard/webupd8
 sudo apt update
 sudo apt install youtube-dlg
 ```
-or
+YouTube-DL
 ```
 sudo apt install update
 wget http://ubuntu.mirrors.tds.net/ubuntu/pool/universe/t/twodict/python-twodict_1.2-1_all.deb
