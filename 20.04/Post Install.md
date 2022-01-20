@@ -263,11 +263,7 @@ sudo apt install dconf-editor
 > -show-apps-at-top
 > -unity-backlit-items
 
-Menu Editors
-```
-sudo apt instll alacarte
-```
-Or
+Menu Editor
 ```
 sudo apt install menulibre
 ```
