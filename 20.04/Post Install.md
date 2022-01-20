@@ -71,16 +71,14 @@ sudo apt install solaar-gnome3
 
 ## Third Party Software
 
-### Snap
+### [Snap](https://snapcraft.io/)
 List of popular software
 ```
 sudo snap install chromium color-picker makemkv mediainfo-gui scrcpy color-picker bashtop
 ```
 
-### Flatpak
+### [Flatpak](https://flathub.org/)
 List of popular software
-
-[AppImage](https://flathub.org/apps/details/io.github.prateekmedia.appimagepool): ```flatpak install flathub io.github.prateekmedia.appimagepool```
 
 [Tor Browser Launcher](https://flathub.org/apps/details/com.github.micahflee.torbrowser-launcher): ```flatpak install flathub com.github.micahflee.torbrowser-launcher```
 
@@ -95,6 +93,13 @@ List of popular software
 [Audacity](https://flathub.org/apps/details/org.audacityteam.Audacity): ```flatpak install flathub org.audacityteam.Audacity```
 
 [FileZilla](https://flathub.org/apps/details/org.filezillaproject.Filezilla): ```flatpak install flathub org.filezillaproject.Filezilla```
+
+
+### [AppImage](https://appimage.github.io/)
+
+[AppImage](https://flathub.org/apps/details/io.github.prateekmedia.appimagepool): ```flatpak install flathub io.github.prateekmedia.appimagepool```
+
+[AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) ```sudo apt install appimagelauncher```
 
 
 ### Repository
