@@ -118,7 +118,7 @@ Ubuntu Repository\
 
 ---
 
-### Repository
+### DEB Files and PPAs
 
 Google Chrome
 ```
