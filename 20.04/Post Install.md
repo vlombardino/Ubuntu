@@ -62,7 +62,6 @@ List of popular software
 [Color Picker](https://snapcraft.io/color-picker): ```sudo snap install color-picker```
 
 [scrcpy](https://snapcraft.io/scrcpy): ```sudo snap install scrcpy```
-> List connected devices ```adb devices``` Connect to device ```scrcpy -s SERIAL``` Disconnect ```adb disconnect```
 
 [bashtop](https://snapcraft.io/bashtop): ```sudo snap install bashtop```
 
