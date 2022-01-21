@@ -59,13 +59,17 @@ sudo apt install solaar-gnome3
 ### [Snap](https://snapcraft.io/)
 List of popular software
 
-[Color Picker](https://snapcraft.io/color-picker): ```sudo snap install color-picker```
+[Remmina](https://snapcraft.io/remmina): ```sudo snap install remmina```
 
 [scrcpy](https://snapcraft.io/scrcpy): ```sudo snap install scrcpy```
 
 [bashtop](https://snapcraft.io/bashtop): ```sudo snap install bashtop```
 
 [Flameshot](https://snapcraft.io/flameshot): ```sudo snap install flameshot```
+
+[Video Downloader](https://snapcraft.io/video-downloader): ```sudo snap install video-downloader```
+
+[Color Picker](https://snapcraft.io/color-picker): ```sudo snap install color-picker```
 
 ---
 
@@ -89,6 +93,8 @@ List of popular software
 [MakeMKV](https://flathub.org/apps/details/com.makemkv.MakeMKV): ```flatpak install flathub com.makemkv.MakeMKV```
 
 [MediaInfo](https://flathub.org/apps/details/net.mediaarea.MediaInfo): ```flatpak install flathub net.mediaarea.MediaInfo```
+
+[GitHub Desktop](https://flathub.org/apps/details/io.github.shiftey.Desktop): ```flatpak install flathub io.github.shiftey.Desktop```
 
 [FileZilla](https://flathub.org/apps/details/org.filezillaproject.Filezilla): ```flatpak install flathub org.filezillaproject.Filezilla```
 
@@ -128,40 +134,6 @@ sudo apt update
 sudo apt install appimagelauncher
 ```
 
-GitHub Desktop
-```
-wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo apt-key add -
-sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/packagecloud-shiftky-desktop.list'
-sudo apt-get update
-sudo apt install github-desktop
-```
-
-Remmina
-```
-sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
-sudo apt update
-sudo apt install remmina remmina-plugin-rdp remmina-plugin-secret remmina-plugin-spice
-sudo killall remmina
-```
-
-YouTube-DL GUI
-```
-sudo add-apt-repository ppa:nilarimogard/webupd8
-sudo apt update
-sudo apt install youtube-dlg
-```
-YouTube-DL
-```
-sudo apt install update
-wget http://ubuntu.mirrors.tds.net/ubuntu/pool/universe/t/twodict/python-twodict_1.2-1_all.deb
-sudo apt install ./python-twodict_1.2-1_all.deb
-wget http://ppa.launchpad.net/nilarimogard/webupd8/ubuntu/pool/main/y/youtube-dlg/youtube-dlg_0.4-1~webupd8~disco0_all.deb
-sudo apt install ./youtube-dlg_0.4-1~webupd8~disco0_all.deb
-sudo apt install youtube-dl
-sudo apt install ffmpeg
-rm python-twodict_1.2-1_all.deb youtube-dlg_0.4-1~webupd8~disco0_all.deb
-```
-
 [TeejeeTech](https://teejeetech.in/)
 ```
 sudo apt-add-repository -y ppa:teejee2008/ppa
@@ -186,13 +158,6 @@ Stacer
 sudo add-apt-repository ppa:oguzhaninan/stacer
 sudo apt update
 sudo apt install stacer
-```
-
-MakeMKV
-```
-sudo add-apt-repository ppa:heyarje/makemkv-beta
-sudo apt update
-sudo apt install makemkv-bin makemkv-oss
 ```
 
 ## Desktop Theming
