@@ -32,7 +32,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 ```
 /var/lib/flatpak/
-~/.local/share/applications/
+~/.local/share/flatpak/
 ~/.var/app/
 ```
 
