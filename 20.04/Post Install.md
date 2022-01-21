@@ -279,6 +279,8 @@ Change LibreOffice style to Ribon bar
 
 > -View ▹ Toolbar Layout
 
+---
+
 ### Nvidia
 > Install latest Nvidia drivers
 
@@ -310,6 +312,7 @@ Remove Nvidia PPA
 ```
 sudo add-apt-repository --remove ppa:graphics-drivers/ppa
 ```
+---
 
 ### Mate 
 New Welcome Screen
