@@ -96,6 +96,8 @@ List of popular software
 
 [GitHub Desktop](https://flathub.org/apps/details/io.github.shiftey.Desktop): ```flatpak install flathub io.github.shiftey.Desktop```
 
+[Parsec](https://flathub.org/apps/details/com.parsecgaming.parsec): ```flatpak install flathub com.parsecgaming.parsec```
+
 [FileZilla](https://flathub.org/apps/details/org.filezillaproject.Filezilla): ```flatpak install flathub org.filezillaproject.Filezilla```
 
 ---
