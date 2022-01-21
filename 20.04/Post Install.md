@@ -150,6 +150,11 @@ New Document - Right Click
 touch ~/Templates/Empty\ Document
 ```
 
+Menu Editor
+```
+sudo apt install menulibre
+```
+
 Communitheme
 ```
 sudo snap install communitheme
@@ -185,6 +190,7 @@ Disable lock screen
 ```
 gsettings set org.gnome.desktop.lockdown disable-lock-screen true
 ```
+
 Workspace Dual Monitors
 ```
 gsettings set org.gnome.mutter workspaces-only-on-primary false
@@ -198,16 +204,6 @@ sudo apt install dconf-editor
 > -show-apps-at-top
 > -unity-backlit-items
 
-Menu Editor
-```
-sudo apt install menulibre
-```
-
-Kdenlive Dark Theme
-```
-sudo apt install kde-style-breeze-qt4
-sudo apt install breeze-gtk-theme
-```
 
 ### Gnome Extensions
 Gnome Extensions Connector
@@ -312,6 +308,16 @@ Remove Nvidia PPA
 ```
 sudo add-apt-repository --remove ppa:graphics-drivers/ppa
 ```
+
+---
+
+### Kdenlive
+Dark Theme
+```
+sudo apt install kde-style-breeze-qt4
+sudo apt install breeze-gtk-theme
+```
+
 ---
 
 ### Mate 
