@@ -281,7 +281,9 @@ Change LibreOffice style to Ribon bar
 
 
 
-## Install latest Nvidia drivers
+## Nvidia
+> Install latest Nvidia drivers
+
 Show video card details
 ```
 sudo lshw -c display
