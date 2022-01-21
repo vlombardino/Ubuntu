@@ -36,24 +36,6 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 ~/.var/app/
 ```
 
-VNC Share Desktop
-```
-sudo apt install vino
-Open settings panel: Setting -> Sharing -> Screen Sharing
-#Start vino-server at login
-/usr/lib/vino/vino-server
-```
-
-exFAT Drive
-```
-sudo apt install exfat-fuse exfat-utils
-```
-
-Managing Logitech’s Unifying Receiver
-```
-sudo apt install solaar-gnome3
-```
-
 ## Third Party Software
 
 ### [Snap](https://snapcraft.io/)
@@ -263,6 +245,24 @@ chmod 755 fix-cedilla
 ```
 > Settings ▹ Region & Language ▹ Input Sources: English(US, intl., with dead keys)
 
+VNC Share Desktop
+```
+sudo apt install vino
+Open settings panel: Setting -> Sharing -> Screen Sharing
+#Start vino-server at login
+/usr/lib/vino/vino-server
+```
+
+exFAT Drive
+```
+sudo apt install exfat-fuse exfat-utils
+```
+
+Managing Logitech’s Unifying Receiver
+```
+sudo apt install solaar-gnome3
+```
+
 Fix Bluetooth
 ```
 dpkg --status bluez | grep '^Version:'
@@ -278,6 +278,8 @@ Change LibreOffice style to Ribon bar
 > -Restart LibreOffice
 
 > -View ▹ Toolbar Layout
+
+
 
 ## Install latest Nvidia drivers
 Show video card details
