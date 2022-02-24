@@ -2,11 +2,12 @@
 
 ## Software
 
-Initial Software (Desktop and/or Server)
+Initial software for the Desktop and/or Server
 ```
 sudo apt install openssh-server vim
 ```
 ## Software (Desktop)
+Additional software for the Desktop
 ```
 sudo apt install gnome-tweaks gdebi synaptic apt-xapian-index gnome-system-monitor libgtop2-dev neofetch
 ```
