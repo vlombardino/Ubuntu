@@ -6,13 +6,13 @@ Initial Software (Desktop and/or Server)
 ```
 sudo apt install openssh-server vim
 ```
-
-## Repository Software
-
 Additional Software (Desktop)
 ```
 sudo apt install gnome-tweaks gdebi synaptic apt-xapian-index gnome-system-monitor libgtop2-dev neofetch
 ```
+
+
+## Repository Software
 
 Restricted Extras
 ```
@@ -101,6 +101,14 @@ Google Chrome
 cd Downloads
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+```
+
+Google Chrome Remote Desktop
+```
+mkdir ~/.config/chrome-remote-desktop
+cd Downloads
+wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+sudo dpkg -i chrome-remote-desktop_current_amd64.deb
 ```
 
 LibreOffice
