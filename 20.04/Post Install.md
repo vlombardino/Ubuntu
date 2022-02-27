@@ -242,6 +242,12 @@ GSConnect for Gnome Shell
 
 ## Misc
 
+Gnome application launchers location
+```
+/usr/share/applications
+~/.local/share/applications
+```
+
 [Gnome Cedilla Fix](https://github.com/marcopaganini/gnome-cedilla-fix)
 ```
 wget -q https://raw.githubusercontent.com/marcopaganini/gnome-cedilla-fix/master/fix-cedilla -O fix-cedilla
