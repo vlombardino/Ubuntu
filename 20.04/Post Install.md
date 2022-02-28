@@ -52,6 +52,8 @@ List of popular software
 
 [Video Downloader](https://snapcraft.io/video-downloader): ```sudo snap install video-downloader```
 
+[LosslessCut](https://snapcraft.io/losslesscut): ```sudo snap install losslesscut```
+
 [Color Picker](https://snapcraft.io/color-picker): ```sudo snap install color-picker```
 
 ---
