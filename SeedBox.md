@@ -180,3 +180,25 @@ docker create \
 	--restart unless-stopped \
 	hurlenko/filebrowser
 ```
+
+[Plex](https://www.plex.tv/)
+```
+---
+version: "2.1"
+services:
+  plex:
+    image: lscr.io/linuxserver/plex
+    container_name: plex
+    network_mode: host
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - VERSION=docker
+    volumes:
+      - /home/box/docker/plex/config:/config
+      - /home/box/Media/TV:/tv
+      - /home/box/Media/Movies:/movies
+      - /home/box/Media/Animation:/animation
+      - /home/box/Media/Optimized:/optimized
+    restart: unless-stopped
+```
