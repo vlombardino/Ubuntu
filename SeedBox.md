@@ -182,6 +182,7 @@ docker create \
 ```
 
 [Plex](https://www.plex.tv/)
+##### Portainer -> Stacks
 ```
 ---
 version: "2.1"
