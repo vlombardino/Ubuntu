@@ -1,3 +1,15 @@
+### Upgrade
+
+Before release day
+```
+sudo do-release-upgrade -d
+```
+
+After release day
+```
+sudo do-release-upgrade -c
+```
+
 ### Desktop Theming
 ```
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
