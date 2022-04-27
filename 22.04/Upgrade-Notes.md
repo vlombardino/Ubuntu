@@ -64,10 +64,12 @@ sudo flatpak repair
 ```
 Install or Re-Install numlockx
 ```
+sudo apt install numlockx
 numlockx on
 ```
 #might have to add it to start up.
 
-Can't login to Wayland (loop)
-Reset ~/.config file
-
+Can't login to Wayland (loop). Reset ~/.config file
+```
+mv ~/.config ~/config.bak
+```
