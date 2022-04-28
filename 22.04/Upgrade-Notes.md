@@ -81,7 +81,15 @@ sudo apt install numlockx
 numlockx on
 ```
 
-Can't login to Wayland (loop). Reset ~/.config file
+#### Fix Wayland login
+
+Chrome Remote Desktop. Move folder
+```
+mv ~/.config/chrome-remote-desktop ~/.config/chrome-remote-desktop.bak
+```
+Wayland (loop). Reset ~/.config or ~/.local or ~/.cache
 ```
 mv ~/.config ~/config.bak
+mv ~/.local ~/local.bak
+mv ~/.cache ~/cache.bak
 ```
