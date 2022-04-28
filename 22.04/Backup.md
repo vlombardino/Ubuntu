@@ -5,6 +5,8 @@ nfs://192.168.1.10/volume1/Backups/Computers
 ```
 
 ## Synology NFS
+> Control Panel -> Shared Folder\
+> \*Select Folder\* -> Edit -> NFS Permissions
 
 Hostname or IP: ```192.168.1.0/24```\
 Privilege: ```Read/Write```\
