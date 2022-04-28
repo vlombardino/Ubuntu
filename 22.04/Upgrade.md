@@ -83,11 +83,15 @@ numlockx on
 
 #### Fix Wayland login
 
-Chrome Remote Desktop. Move folder
+Chrome Remote Desktop. 
+> Chrome Remote Desktop can prevent a user to login.
+> Move the folder to home directory to fix.
 ```
-mv ~/.config/chrome-remote-desktop ~/.config/chrome-remote-desktop.bak
+mv ~/.config/chrome-remote-desktop ~/chrome-remote-desktop.bak
 ```
-Wayland (loop). Reset ~/.config or ~/.local or ~/.cache
+
+Wayland (loop). 
+> To troubleshoot login errors reset ~/.config or ~/.local or ~/.cache
 ```
 mv ~/.config ~/config.bak
 mv ~/.local ~/local.bak
