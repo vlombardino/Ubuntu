@@ -1,13 +1,23 @@
 ### Upgrade Notes
 
-Before release day
+Terminal
 ```
 sudo do-release-upgrade -d
 ```
 
-After release day
+Desktop
 ```
-sudo do-release-upgrade -c
+sudo apt update
+sudo apt upgrade
+sudo reboot
+
+sudo update-manager -c -d
+```
+
+Clean up Repos
+```
+cd /etc/apt/sources.list.d
+ls -lh
 ```
 
 ### Desktop Theming
