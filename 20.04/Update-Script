@@ -8,4 +8,4 @@ sudo apt autoclean -y
 
 #optional
 #sudo snap refresh
-#sudo flatpak update
+#sudo flatpak update -y
