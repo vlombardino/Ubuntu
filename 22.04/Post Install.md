@@ -106,6 +106,19 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
+Google Chrome from Repository
+```
+sudo apt install -y software-properties-common apt-transport-https wget ca-certificates gnupg2 ubuntu-keyring
+sudo wget -O- https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor | sudo tee /usr/share/keyrings/google-chrome.gpg
+echo deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo apt update
+sudo apt -y install google-chrome-stable
+#or
+sudo apt -y install google-chrome-beta
+#or
+sudo apt -y install google-chrome-unstable
+```
+
 Google Chrome Remote Desktop
 ```
 mkdir ~/.config/chrome-remote-desktop
