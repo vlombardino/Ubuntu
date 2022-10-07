@@ -61,6 +61,8 @@ List of popular software
 ### [Flatpak](https://flathub.org/)
 List of popular software
 
+[Extension Manager](https://flathub.org/apps/details/com.mattjakeman.ExtensionManager): ```flatpak install flathub com.mattjakeman.ExtensionManager```
+
 [Chromium Web Browser](https://flathub.org/apps/details/org.chromium.Chromium): ```flatpak install flathub org.chromium.Chromium```
 
 [Tor Browser Launcher](https://flathub.org/apps/details/com.github.micahflee.torbrowser-launcher): ```flatpak install flathub com.github.micahflee.torbrowser-launcher```
