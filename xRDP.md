@@ -1,3 +1,18 @@
+### Install script from [C-NERGY.BE](https://www.c-nergy.be/products.html).
+```
+wget -q -O xrdp-installer.zip https://www.c-nergy.be/downloads/xRDP/xrdp-installer-1.4.4.zip && unzip xrdp-installer.zip && rm xrdp-installer.zip
+
+chmod +x  ~/Downloads/xrdp-installer-*.sh
+```
+
+### Install with sound.
+```
+./xrdp-installer-1.4.4.sh -s
+#If sound module doesn't load
+pulseaudio -k
+```
+---
+
 ### Installing xRDP
 ```
 sudo apt install xrdp
@@ -50,19 +65,4 @@ sudo apt install gnome-tweak-tool dconf-editor
 ### Fix dock bar not extending.
 ```
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height 'true'
-```
----
-
-### Install script from [C-NERGY.BE](https://www.c-nergy.be/products.html).
-```
-wget http://c-nergy.be/downloads/xrdp-installer-1.2.1.zip
-unzip xrdp-installer-1.2.1.zip
-chmod +x xrdp-installer-1.2.1.sh
-```
-
-### Install with sound.
-```
-./xrdp-installer-1.2.1.sh -s
-#If sound module doesn't load
-pulseaudio -k
 ```
