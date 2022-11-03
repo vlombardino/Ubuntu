@@ -2,7 +2,7 @@
 ```
 wget -q -O xrdp-installer.zip https://www.c-nergy.be/downloads/xRDP/xrdp-installer-1.4.4.zip && unzip xrdp-installer.zip && rm xrdp-installer.zip
 
-chmod +x  ~/Downloads/xrdp-installer-*.sh
+chmod +x xrdp-installer-*.sh
 ```
 
 ### Install with sound.
