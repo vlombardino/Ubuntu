@@ -2,6 +2,11 @@
 
 ## Software
 
+Turn off "apt_news"
+```
+sudo pro config set apt_news=false
+```
+
 Initial software for the Desktop and/or Server
 ```
 sudo apt install openssh-server vim
