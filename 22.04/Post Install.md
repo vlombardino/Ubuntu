@@ -2,7 +2,7 @@
 
 ## Software
 
-Turn off "apt_news"
+Turn off ```apt_news```
 ```
 sudo pro config set apt_news=false
 ```
