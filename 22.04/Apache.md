@@ -13,12 +13,6 @@ Install Apache withe the following command:
 apt install apache2 -y
 ```
 
-Check and start Apache service
-```bash
-systemctl status apache2
-sudo systemctl enable --now apache2
-```
-
 Configure firewall
 ```bash
 ufw status
@@ -30,6 +24,12 @@ or
 ufw app list
 ufw allow 'Apache Full'
 ufw status
+```
+
+Check and start Apache service
+```bash
+systemctl status apache2
+sudo systemctl enable --now apache2
 ```
 
 Use netstat or ss Apache listening port
