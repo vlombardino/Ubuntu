@@ -8,12 +8,12 @@ apt get update && apt get upgrade -y
 ```
 
 ## Install Apache
-Install Apache withe the following command:
+### Install Apache withe the following command:
 ```bash
 apt install apache2 -y
 ```
 
-Configure firewall
+### Configure firewall
 ```bash
 ufw status
 ufw allow 80/tcp
@@ -26,13 +26,13 @@ ufw allow 'Apache Full'
 ufw status
 ```
 
-Check and start Apache service
+### Check and start Apache service
 ```bash
 systemctl status apache2
 sudo systemctl enable --now apache2
 ```
 
-Use ss or netstat to check Apache listening port
+### Use ss or netstat to check Apache listening port
 ```bash
 ss -plant | grep apache
 ```
@@ -42,14 +42,14 @@ netstat -plnt | grep apache
 ```
 
 ## Change Apache default port (if needed)
-Edit Apache default port
+### Edit Apache default port
 If default port needs to be changed edit the following files:
 > Change `Listen 80` or add additional ports under `Listen 80`
 ```bash
 nano /etc/apache2/ports.conf
 ```
 
-Edit Apache default virtual host configuration
+### Edit Apache default virtual host configuration
 > Change `<VirtualHost *:80>`
 ```bash
 nano /etc/apache2/sites-available/000-default.conf
