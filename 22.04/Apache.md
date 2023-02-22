@@ -32,6 +32,16 @@ ufw allow 'Apache Full'
 ufw status
 ```
 
+Use netstat or ss Apache listening port
+```bash
+ss -plant | grep apache
+```
+or
+```bash
+netstat -plnt | grep apache
+```
+
+## Change Apache default port (if needed)
 Edit Apache default port
 If default port needs to be changed edit the following files:
 > Change `Listen 80` or add additional ports under `Listen 80`
@@ -43,15 +53,6 @@ Edit Apache default virtual host configuration
 > Change `<VirtualHost *:80>`
 ```bash
 nano /etc/apache2/sites-available/000-default.conf
-```
-
-Use netstat or ss Apache listening port
-```bash
-ss -plant | grep apache
-```
-or
-```bash
-netstat -plnt | grep apache
 ```
 
 ---
