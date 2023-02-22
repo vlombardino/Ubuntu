@@ -32,7 +32,7 @@ systemctl status apache2
 sudo systemctl enable --now apache2
 ```
 
-Use netstat or ss Apache listening port
+Use ss or netstat to check Apache listening port
 ```bash
 ss -plant | grep apache
 ```
