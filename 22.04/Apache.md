@@ -68,3 +68,11 @@ systemctl disable apache2
 
 /etc/init.d/apache2 graceful
 ```
+
+## Fix file permissions
+```bash
+chown -R www-data:www-data /var/www
+```
+```bash
+chmod -R g+rw /var/www; find /var/www -type d -print0 | xargs -0 chmod g+s
+```
