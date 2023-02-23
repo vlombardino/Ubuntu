@@ -70,6 +70,7 @@ systemctl disable apache2
 ```
 
 ## Fix file permissions
+> 403 Forbidden Error
 ```bash
 chown -R www-data:www-data /var/www
 ```
