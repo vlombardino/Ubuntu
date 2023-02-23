@@ -2,13 +2,13 @@
 > Apache Web Server running on Ubuntu 22.04 \
 > All commands will be assumed you are running as root
 
-## Update & Upgrade
+### Update & Upgrade
 ```bash
 apt get update && apt get upgrade -y
 ```
 
 ## Install Apache
-### Install Apache withe the following command:
+### Install Apache withe the following command
 ```bash
 apt install apache2 -y
 ```
