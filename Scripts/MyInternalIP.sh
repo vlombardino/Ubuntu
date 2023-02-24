@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 #Requires net-tools
 #sudo apt install net-tools
