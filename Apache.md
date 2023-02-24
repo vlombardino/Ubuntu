@@ -1,6 +1,8 @@
 # [Apache](https://httpd.apache.org/)
-> Apache Web Server running on Ubuntu 22.04 \
-> All commands will be assumed you are running as root
+
+### Operating System & Software
+- Ubuntu 22.04 (root)
+- Apache Web Server
 
 ### Update & Upgrade
 ```bash
