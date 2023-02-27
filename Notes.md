@@ -1,3 +1,4 @@
+# General
 ### Shorcut Locations
 Most apps: ```/usr/share/applications/```
 
@@ -33,3 +34,22 @@ sudo apt install radeontop
 ### Overlays
 + [MangoHud](https://github.com/flightlessmango/MangoHud)
 + [GOverlay](https://github.com/benjamimgois/goverlay)
+
+# Apps
+### Youtbe Downloader
+[yt-dlp](https://snapcraft.io/install/yt-dlp/ubuntu#install)
+```bash
+sudo snap install yt-dlp
+```
+List formats
+```bash
+ yt-dlp -F https://www.youtube.com/watch?v=99999999
+```
+Download with best video and audio
+```bash
+yt-dlp --format "bv*+ba/b" https://www.youtube.com/watch?v=99999999
+```
+Download playlist (playlist numbering)
+```bash
+yt-dlp -o "%(playlist_index)02d - %(title)s.%(ext)s" https://www.youtube.com/playlist?list=99999999
+```
