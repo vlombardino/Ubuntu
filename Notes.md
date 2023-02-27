@@ -37,6 +37,7 @@ sudo apt install radeontop
 
 # Apps
 ### Youtbe Downloader
+> Notes
 [yt-dlp](https://snapcraft.io/install/yt-dlp/ubuntu#install)
 ```bash
 sudo snap install yt-dlp
@@ -47,7 +48,7 @@ List formats
 ```
 Download with best video and audio
 ```bash
-yt-dlp --format "bv*+ba/b" https://www.youtube.com/watch?v=99999999
+yt-dlp -f 'bv*+ba' https://www.youtube.com/watch?v=999999999 -o '%(id)s.%(ext)s'
 ```
 Download playlist (playlist numbering)
 ```bash
