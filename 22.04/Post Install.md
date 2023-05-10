@@ -169,6 +169,11 @@ New Document - Right Click
 touch ~/Templates/Empty\ Document
 ```
 
+Nautilus switch from button-based to pathbar
+```
+gsettings set org.gnome.nautilus.preferences always-use-location-entry true
+```
+
 Menu Editor
 ```
 sudo apt install menulibre
