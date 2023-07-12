@@ -2,6 +2,7 @@
 
 ### Create bin file
 ```bash
+mkdir ~/.local/bin
 touch ~/.local/bin/required-check
 chmod +x ~/.local/bin/required-check
 gedit ~/.local/bin/required-check
@@ -44,6 +45,7 @@ sudo update-initramfs -u -k $(uname -r)
 
 ### Create bin file
 ```bash
+mkdir ~/.local/bin
 touch ~/.local/bin/required-reinstall
 chmod +x ~/.local/bin/required-reinstall
 gedit ~/.local/bin/required-reinstall
