@@ -3,6 +3,10 @@
 ### Download Ventoy
 ```bash
 wget https://github.com/ventoy/Ventoy/releases/download/v1.0.94/ventoy-1.0.94-linux.tar.gz
+```
+
+### Extract Ventoy
+```bash
 tar -xvf ventoy-1.0.94-linux.tar.gz
 ```
 
