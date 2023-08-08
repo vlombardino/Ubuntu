@@ -1,7 +1,9 @@
-# Install Puppet
+# [Puppet](https://www.puppet.com)
 
 ## Requirements
-* Ubuntu 20.04 [Puppet Master]
+* Ubuntu 20.04
+* Puppet Server Node
+* Puppet Agent Node
 
 ## Puppet Master
 
