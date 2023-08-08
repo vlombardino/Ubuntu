@@ -1,7 +1,11 @@
 # Chrome Remote Desktop Headless Ubuntu Server
 
+### Operating System & Software
+- Ubuntu Server 22.04
+- Chrome Remote Desktop
+
 ### Install Ubuntu Server
-Ubuntu Server 22.04 for this guide
+ for this guide
 ```bash
 wget https://releases.ubuntu.com/22.04.2/ubuntu-22.04.2-live-server-amd64.iso
 ```
