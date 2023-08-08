@@ -41,13 +41,11 @@ sudo reboot
 ## Configure Desktop
 > The following will change default Gnome to Ubuntu Gnome
 ```bash
-vi ~/.xsessionrc 
-```
-> with the following content:
-```
+cat << EOF >> ~/.xsessionrc
 export GNOME_SHELL_SESSION_MODE=ubuntu
 export XDG_CURRENT_DESKTOP=ubuntu:GNOME
 export XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+EOF
 ```
 
 ## Install Chrome
