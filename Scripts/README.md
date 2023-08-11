@@ -2,9 +2,9 @@
 
 ### Add user scripts
 ```bash
-mkdir -p .local/bin
-nano .local/bin/script.sh
-chmod +x .local/bin/script.sh
+mkdir -p ~/.local/bin
+nano ~/.local/bin/script.sh
+chmod +x ~/.local/bin/script.sh
 source ~/.profile
 ```
 
