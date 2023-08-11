@@ -1,4 +1,4 @@
-# List of useful commands for Ubuntu
+# Notes
 
 ### Add user scripts
 ```bash
