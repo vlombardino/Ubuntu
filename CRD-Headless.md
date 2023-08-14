@@ -56,9 +56,7 @@ mv /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.b
 ```
 ```bash
 sudo bash -c 'cat << EOF >> /etc/netplan/00-installer-config.yaml
-# This file describes the network interfaces available on your system
-# For more information, see netplan(5).
-# Set and change netplan renderer to NetworkManager GUI tool 
+# Let NetworkManager manage all devices on this system
 network:
   version: 2
   renderer: NetworkManager
