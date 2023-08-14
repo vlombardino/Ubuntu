@@ -48,6 +48,34 @@ export XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
 EOF
 ```
 
+# Additional Modifications
+
+### Switch Networking from `networkd` to `NetworkManager`
+```bash
+mv /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.bak
+```
+```bash
+sudo bash -c 'cat << EOF >> /etc/netplan/00-installer-config.yaml
+# This file describes the network interfaces available on your system
+# For more information, see netplan(5).
+# Set and change netplan renderer to NetworkManager GUI tool 
+network:
+  version: 2
+  renderer: NetworkManager
+EOF'
+```
+```bash
+sudo netplan apply
+```
+```bash
+sudo nmcli networking off && sudo nmcli networking on
+```
+
+### Disable gd3
+```bash
+sudo systemctl disable gdm3.service
+```
+
 ## Install Chrome
 ```bash
 sudo wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmour -o /usr/share/keyrings/google-chrome.gpg
@@ -57,10 +85,6 @@ sudo apt install google-chrome-stable -y
 ```
 
 ## Notes:
-Disable gd3
-```bash
-sudo systemctl disable gdm3.service
-```
 
 Show dock in Gnome
 ```bash
