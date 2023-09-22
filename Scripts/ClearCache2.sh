@@ -10,6 +10,20 @@ user_command='sudo sh -c "echo 3 > /proc/sys/vm/drop_caches"'
 ############################################################
 ### FUNCTIONS
 ############################################################
+### Test for root user ###
+function sudo_test
+{
+if [ $(groups | grep -cE '\b(sudo|wheel)\b') -eq 0 ]; then
+   clear
+   echo
+   echo "Only members of the sudo or wheel group can run this script!"
+   echo
+   read -p "Press enter to exit! " var
+   echo
+   exit 1
+fi
+}
+
 ### Status bar
 function status_bar
 {
@@ -41,6 +55,8 @@ function display_status
 ############################################################
 ### Start Script
 ############################################################
+sudo_test
+
 if [ "$(id -u)" -eq 0 ]; then
   # Run the command as root
   eval "$root_command" &
