@@ -22,7 +22,7 @@ user_command='sudo sh -c "echo 3 > /proc/sys/vm/drop_caches"'
 ############################################################
 ### FUNCTIONS
 ############################################################
-### Test for root user ###
+### Test for sudo user ###
 function sudo_test
 {
 if [ $(groups | grep -cE '\b(sudo|wheel)\b') -eq 0 ]; then
