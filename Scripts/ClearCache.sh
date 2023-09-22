@@ -36,7 +36,7 @@ if [ $(groups | grep -cE '\b(sudo|wheel)\b') -eq 0 ]; then
 fi
 }
 
-### Status bar
+### Status bar ###
 function status_bar
 {
   local pid=$1
@@ -50,7 +50,7 @@ function status_bar
   done
 }
 
-### Displays status bar
+### Displays status bar ###
 function display_status
 {
   command_pid=$!
