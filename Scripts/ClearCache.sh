@@ -67,14 +67,13 @@ function display_status
 ############################################################
 ### Start Script
 ############################################################
-sudo_test
-
 if [ "$(id -u)" -eq 0 ]; then
   # Run the command as root
   eval "$root_command" &
   display_status
   echo
 else
+  sudo_test
   # Run the command as a regular user with sudo
   sudo -v
   eval "$user_command" &
