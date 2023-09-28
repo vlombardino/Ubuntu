@@ -41,7 +41,6 @@ function status_bar
 {
   local pid=$1
   local delay=0.5  # Adjust the refresh rate as needed
-  
   echo -n "Running to empty buffer and cache:"
   echo
   while ps -p $pid > /dev/null; do
@@ -54,13 +53,10 @@ function status_bar
 function display_status
 {
   command_pid=$!
-  
   # Display the status bar while the command is running
   echo
   status_bar $command_pid
   echo
-
-  # Print "Finished" when the command is done
   echo "Finished"
 }
 
