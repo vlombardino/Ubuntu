@@ -66,9 +66,11 @@ List of popular software
 ### [Flatpak](https://flathub.org/)
 List of popular software
 
-[Extension Manager](https://flathub.org/apps/details/com.mattjakeman.ExtensionManager): ```sudo flatpak install flathub com.mattjakeman.ExtensionManager```
-
 [Warehouse (flatpaks manager)](https://flathub.org/apps/io.github.flattool.Warehouse): ```sudo flatpak install flathub io.github.flattool.Warehouse```
+
+[Flatseal (flatpaks permissions manager)](https://flathub.org/apps/com.github.tchx84.Flatseal): ```sudo flatpak install flathub com.github.tchx84.Flatseal```
+
+[Extension Manager](https://flathub.org/apps/details/com.mattjakeman.ExtensionManager): ```sudo flatpak install flathub com.mattjakeman.ExtensionManager```
 
 [Chromium Web Browser](https://flathub.org/apps/details/org.chromium.Chromium): ```sudo flatpak install flathub org.chromium.Chromium```
 
