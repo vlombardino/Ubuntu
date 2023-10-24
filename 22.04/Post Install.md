@@ -66,38 +66,40 @@ List of popular software
 ### [Flatpak](https://flathub.org/)
 List of popular software
 
-[Extension Manager](https://flathub.org/apps/details/com.mattjakeman.ExtensionManager): ```flatpak install flathub com.mattjakeman.ExtensionManager```
+[Extension Manager](https://flathub.org/apps/details/com.mattjakeman.ExtensionManager): ```sudo flatpak install flathub com.mattjakeman.ExtensionManager```
 
-[Chromium Web Browser](https://flathub.org/apps/details/org.chromium.Chromium): ```flatpak install flathub org.chromium.Chromium```
+[Warehouse (flatpaks manager)](https://flathub.org/apps/io.github.flattool.Warehouse): ```sudo flatpak install flathub io.github.flattool.Warehouse```
 
-[Tor Browser Launcher](https://flathub.org/apps/details/com.github.micahflee.torbrowser-launcher): ```flatpak install flathub com.github.micahflee.torbrowser-launcher```
+[Chromium Web Browser](https://flathub.org/apps/details/org.chromium.Chromium): ```sudo flatpak install flathub org.chromium.Chromium```
 
-[Bottles](https://flathub.org/apps/details/com.usebottles.bottles): ```flatpak install flathub com.usebottles.bottles```
+[Tor Browser Launcher](https://flathub.org/apps/details/com.github.micahflee.torbrowser-launcher): ```sudo flatpak install flathub com.github.micahflee.torbrowser-launcher```
 
-[Shotcut](https://flathub.org/apps/details/org.shotcut.Shotcut): ```flatpak install flathub org.shotcut.Shotcut```
+[Bottles](https://flathub.org/apps/details/com.usebottles.bottles): ```sudo flatpak install flathub com.usebottles.bottles```
 
-[Video Trimmer](https://flathub.org/apps/details/org.gnome.gitlab.YaLTeR.VideoTrimmer): ```flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer```
+[Shotcut](https://flathub.org/apps/details/org.shotcut.Shotcut): ```sudo flatpak install flathub org.shotcut.Shotcut```
 
-[gThumb Image Viewer](https://flathub.org/apps/details/org.gnome.gThumb): ```flatpak install flathub org.gnome.gThumb```
+[Video Trimmer](https://flathub.org/apps/details/org.gnome.gitlab.YaLTeR.VideoTrimmer): ```sudo flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer```
 
-[Audacity](https://flathub.org/apps/details/org.audacityteam.Audacity): ```flatpak install flathub org.audacityteam.Audacity```
+[gThumb Image Viewer](https://flathub.org/apps/details/org.gnome.gThumb): ```sudo flatpak install flathub org.gnome.gThumb```
 
-[MakeMKV](https://flathub.org/apps/details/com.makemkv.MakeMKV): ```flatpak install flathub com.makemkv.MakeMKV```
+[Audacity](https://flathub.org/apps/details/org.audacityteam.Audacity): ```sudo flatpak install flathub org.audacityteam.Audacity```
 
-[MediaInfo](https://flathub.org/apps/details/net.mediaarea.MediaInfo): ```flatpak install flathub net.mediaarea.MediaInfo```
+[MakeMKV](https://flathub.org/apps/details/com.makemkv.MakeMKV): ```sudo flatpak install flathub com.makemkv.MakeMKV```
 
-[GitHub Desktop](https://flathub.org/apps/details/io.github.shiftey.Desktop): ```flatpak install flathub io.github.shiftey.Desktop```
+[MediaInfo](https://flathub.org/apps/details/net.mediaarea.MediaInfo): ```sudo flatpak install flathub net.mediaarea.MediaInfo```
 
-[Parsec](https://flathub.org/apps/details/com.parsecgaming.parsec): ```flatpak install flathub com.parsecgaming.parsec```
+[GitHub Desktop](https://flathub.org/apps/details/io.github.shiftey.Desktop): ```sudo flatpak install flathub io.github.shiftey.Desktop```
 
-[FileZilla](https://flathub.org/apps/details/org.filezillaproject.Filezilla): ```flatpak install flathub org.filezillaproject.Filezilla```
+[Parsec](https://flathub.org/apps/details/com.parsecgaming.parsec): ```sudo flatpak install flathub com.parsecgaming.parsec```
+
+[FileZilla](https://flathub.org/apps/details/org.filezillaproject.Filezilla): ```sudo flatpak install flathub org.filezillaproject.Filezilla```
 
 ---
 
 ### [AppImage](https://appimage.github.io/)
 
 Flatpack App\
-[AppImage](https://flathub.org/apps/details/io.github.prateekmedia.appimagepool): ```flatpak install flathub io.github.prateekmedia.appimagepool```
+[AppImage](https://flathub.org/apps/details/io.github.prateekmedia.appimagepool): ```sudo flatpak install flathub io.github.prateekmedia.appimagepool```
 
 Ubuntu Repository\
 [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) ```sudo apt install appimagelauncher```
