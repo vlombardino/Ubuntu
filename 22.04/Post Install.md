@@ -82,6 +82,8 @@ List of popular software
 
 [Video Trimmer](https://flathub.org/apps/details/org.gnome.gitlab.YaLTeR.VideoTrimmer): ```sudo flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer```
 
+[Parabolic (Download web video and audio)](https://flathub.org/apps/org.nickvision.tubeconverter): ```sudo flatpak install flathub org.nickvision.tubeconverter```
+
 [gThumb Image Viewer](https://flathub.org/apps/details/org.gnome.gThumb): ```sudo flatpak install flathub org.gnome.gThumb```
 
 [Audacity](https://flathub.org/apps/details/org.audacityteam.Audacity): ```sudo flatpak install flathub org.audacityteam.Audacity```
