@@ -98,6 +98,8 @@ List of popular software
 
 [FileZilla](https://flathub.org/apps/details/org.filezillaproject.Filezilla): ```sudo flatpak install flathub org.filezillaproject.Filezilla```
 
+[Mission Center](https://flathub.org/apps/io.missioncenter.MissionCenter): ```sudo flatpak install flathub io.missioncenter.MissionCenter```
+
 ---
 
 ### [AppImage](https://appimage.github.io/)
