@@ -176,9 +176,26 @@ New Document - Right Click
 touch ~/Templates/Empty\ Document
 ```
 
+Minimize on click
+```
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+```
+
+Auto maximize apps
+```
+gsettings set org.gnome.mutter auto-maximize false
+```
+
 Nautilus switch from button-based to pathbar
 ```
 gsettings set org.gnome.nautilus.preferences always-use-location-entry true
+```
+
+Background solid color
+```
+gsettings set org.gnome.desktop.background picture-uri none
+gsettings set org.gnome.desktop.background primary-color '#164863'
+gsettings set org.gnome.desktop.background color-shading-type 'solid'
 ```
 
 Menu Editor
