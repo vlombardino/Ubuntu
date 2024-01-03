@@ -123,14 +123,13 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 Google Chrome from Repository
 ```
-sudo wget -O- https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor | sudo tee /usr/share/keyrings/google-chrome.gpg
-echo deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main | sudo tee /etc/apt/sources.list.d/google-chrome.list
-sudo apt update
-sudo apt -y install google-chrome-stable
+wget -qO - https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor | sudo dd of=/usr/share/keyrings/google-chrome.gpg
+echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo apt update && sudo apt install google-chrome-stable -y
 #or
-sudo apt -y install google-chrome-beta
+sudo apt update && sudo apt install google-chrome-beta -y
 #or
-sudo apt -y install google-chrome-unstable
+sudo apt update && sudo apt install google-chrome-unstable -y
 ```
 
 Google Chrome Remote Desktop
