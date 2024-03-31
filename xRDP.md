@@ -1,18 +1,17 @@
 ## Install script from [C-NERGY.BE](https://www.c-nergy.be/products.html).
 ```
-wget -q -O xrdp-installer.zip https://c-nergy.be/downloads/xRDP/xrdp-installer-1.4.8.zip && unzip xrdp-installer.zip && rm xrdp-installer.zip
+wget -q -O xrdp-installer.zip https://www.c-nergy.be/downloads/xRDP/xrdp-installer-1.4.4.zip && unzip xrdp-installer.zip && rm xrdp-installer.zip
 
 chmod +x xrdp-installer-*.sh
 ```
 
 ### Install with sound.
 ```
-./xrdp-installer-1.4.8.sh -s
-```
-> If sound module doesn't load
-```
+./xrdp-installer-1.4.4.sh -s
+#If sound module doesn't load
 pulseaudio -k
 ```
+
 ---
 
 ## Install ssh server & xrdp
