@@ -1,13 +1,13 @@
 ## Install script from [C-NERGY.BE](https://www.c-nergy.be/products.html).
 ```
-wget -q -O xrdp-installer.zip https://c-nergy.be/downloads/xRDP/xrdp-installer-1.4.8.zip && unzip xrdp-installer.zip && rm xrdp-installer.zip
+wget -q -O xrdp-installer.zip https://c-nergy.be/downloads/xRDP/xrdp-installer-1.5.1.zip && unzip xrdp-installer.zip && rm xrdp-installer.zip
 
 chmod +x xrdp-installer-*.sh
 ```
 
 ### Install with sound.
 ```
-./xrdp-installer-1.4.8.sh -s
+./xrdp-installer-1.5.1.sh -s
 ```
 > If sound module doesn't load
 ```
