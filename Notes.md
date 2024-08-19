@@ -10,6 +10,15 @@ Installed by Snap apps: ```/var/lib/snapd/desktop/applications/```
 
 Installed by Flatpak apps: ```/var/lib/flatpak/exports/share/applications/```
 
+### [Mainline Kernels](https://github.com/bkw777/mainline)
+Repository
+```
+sudo add-apt-repository ppa:cappelikan/ppa
+sudo apt update
+sudo apt install mainline
+```
+> or Download [deb](https://github.com/bkw777/mainline/releases/latest)
+
 ### Passwordless SSH
 ```bash
 ssh-keygen -f $USER
