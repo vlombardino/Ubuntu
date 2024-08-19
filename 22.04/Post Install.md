@@ -247,13 +247,13 @@ Change LibreOffice style to Ribon bar
 
 [xRDP](https://c-nergy.be/blog/?cat=79)
 ```
-wget -q -O xrdp-installer.zip https://www.c-nergy.be/downloads/xRDP/xrdp-installer-1.4.4.zip && unzip xrdp-installer.zip && rm xrdp-installer.zip
+wget -q -O xrdp-installer.zip https://www.c-nergy.be/downloads/xRDP/xrdp-installer-1.5.1.zip && unzip xrdp-installer.zip && rm xrdp-installer.zip
 
 chmod +x  ~/Downloads/xrdp-installer-*.sh
 ```
 Install xRDP with sound
 ```
-./xrdp-installer-1.4.4.sh -s
+./xrdp-installer-1.5.1.sh -s
 ```
 
 ### Nvidia
