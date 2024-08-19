@@ -259,17 +259,6 @@ Change LibreOffice style to Ribon bar
 
 > -View ▹ Toolbar Layout
 
-[xRDP](https://c-nergy.be/blog/?cat=79)
-```
-wget -q -O xrdp-installer.zip https://www.c-nergy.be/downloads/xRDP/xrdp-installer-1.4.4.zip && unzip xrdp-installer.zip && rm xrdp-installer.zip
-
-chmod +x  ~/Downloads/xrdp-installer-*.sh
-```
-Install xRDP with sound
-```
-./xrdp-installer-1.4.4.sh -s
-```
-
 ### Nvidia
 > Install latest Nvidia drivers
 
