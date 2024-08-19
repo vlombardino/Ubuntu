@@ -1,4 +1,4 @@
-# Ubuntu 22.04
+# Ubuntu 24.04
 
 ## Software
 
