@@ -150,36 +150,6 @@ wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
 sudo dpkg -i chrome-remote-desktop_current_amd64.deb
 ```
 
-LibreOffice
-```
-sudo add-apt-repository ppa:libreoffice
-sudo apt update
-sudo apt install libreoffice
-libreoffice --version
-```
-
-AppImage Launcher
-```
-sudo add-apt-repository ppa:appimagelauncher-team/stable
-sudo apt update
-sudo apt install appimagelauncher
-```
-
-grub customizer
-```
-sudo add-apt-repository ppa:danielrichter2007/grub-customizer
-sudo apt update
-sudo apt install grub-customizer
-```
-
-Stacer
-> Linux System Optimizer and Monitoring
-```
-sudo add-apt-repository ppa:oguzhaninan/stacer
-sudo apt update
-sudo apt install stacer
-```
-
 ## Desktop Theming
 New Document - Right Click
 ```
