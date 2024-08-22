@@ -191,9 +191,14 @@ Minimize on click
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ```
 
-Auto maximize apps
+Turn off auto maximize application
 ```
 gsettings set org.gnome.mutter auto-maximize false
+```
+
+Start Application in the center
+```
+gsettings set org.gnome.mutter center-new-windows true
 ```
 
 Nautilus switch from button-based to pathbar
