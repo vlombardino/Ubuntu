@@ -69,11 +69,11 @@ sudo apt install cockpit-navigator
 ```
 
 [45Drives Scripts](https://github.com/45Drives/scripts/tree/main)
-Ubuntu 20.04
+> Ubuntu 20.04
 ```bash
 bash -c "$(wget -qLO - https://github.com/45Drives/scripts/blob/main/ubuntu20-preconfig-ceph.sh)"
 ```
-Ubuntu 22.04
+> Ubuntu 22.04
 ```bash
 bash -c "$(wget -qLO - https://github.com/45Drives/scripts/blob/main/ubuntu22-preconfig-ceph.sh)"
 ```
