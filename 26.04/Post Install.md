@@ -36,8 +36,8 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 ```
 Clean flatpak installation
 ```
-flatpak uninstall --unused
-flatpak repair
+sudo flatpak uninstall --unused
+sudo flatpak repair
 ```
 > Flatpak locations
 
